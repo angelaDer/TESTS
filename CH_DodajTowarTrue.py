@@ -8,7 +8,7 @@ driver.get("http://localhost:8082/home")
 xpath_list=['/html/body/div[1]/div/div/ul/li[2]',
             '/html/body/div[2]/div[1]/div[1]/div/div[1]/div[2]/div[2]/div/div']
 
-dostawca_list=["Klient 1"]
+dostawca_list=["Klient 1", "Klient 2", "Klient 5"]
 towar_list=["Marchew", "marchew", "maRCHew"]
 
 for i in range(len(xpath_list)):
@@ -40,4 +40,3 @@ for i in range(len(dostawca_list)):
     driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/div[2]/div[1]/div').click()
 
 time.sleep(2)
-driver.close()
